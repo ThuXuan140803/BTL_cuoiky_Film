@@ -6,17 +6,17 @@ import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
 
-public class activity_datve extends AppCompatActivity {
-    Button btnthanhtoan;
+public class activity_kungfu extends AppCompatActivity {
+    Button btnDatve;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_datve);
-        btnthanhtoan = findViewById(R.id.btnthanhtoan);
-        btnthanhtoan.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_kungfu);
+        btnDatve = findViewById(R.id.btnDatve);
+        btnDatve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_datve.this, activity_thanhtoan.class);
+                Intent intentDK = new Intent(activity_kungfu.this, activity_datve.class);
                 startActivity(intentDK);
 
             }

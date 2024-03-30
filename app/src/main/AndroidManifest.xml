@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Baicuoiky"
         tools:targetApi="31">
         <activity
+            android:name=".activity_dangky"
+            android:exported="false" />
+        <activity
+            android:name=".activity_denmang"
+            android:exported="false" />
+        <activity
+            android:name=".activity_kong"
+            android:exported="false" />
+        <activity
+            android:name=".activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_kungfu"
+            android:exported="false" />
+        <activity
+            android:name=".activity_phimmai"
+            android:exported="false" />
+        <activity
             android:name=".activity_dangxuat"
             android:exported="false" />
         <activity
@@ -50,9 +68,6 @@
             android:exported="false" />
         <activity
             android:name=".activity_trangchu"
-            android:exported="false" />
-        <activity
-            android:name=".activity_dangky"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
