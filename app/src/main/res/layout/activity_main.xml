@@ -47,7 +47,7 @@
         android:id="@+id/txtquenmatkhau"
         android:layout_width="162dp"
         android:layout_height="44dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="124dp"
         android:layout_marginTop="52dp"
         android:text="Quên mật khẩu"
         android:textColor="@color/white"
@@ -65,7 +65,7 @@
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="Mật khẩu"
-        android:inputType="text"
+        android:inputType="numberPassword"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         android:textSize="30dp"
@@ -73,19 +73,6 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtemail"
-        tools:ignore="MissingConstraints" />
-
-    <CheckBox
-        android:id="@+id/checkBoxLuuMk"
-        android:layout_width="225dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="36dp"
-        android:text="Lưu mật khẩu"
-        android:textColor="#FBFBFB"
-        android:textSize="23dp"
-        app:layout_constraintStart_toEndOf="@+id/txtquenmatkhau"
-        app:layout_constraintTop_toBottomOf="@+id/edtmatkhau"
         tools:ignore="MissingConstraints" />
 
     <Button

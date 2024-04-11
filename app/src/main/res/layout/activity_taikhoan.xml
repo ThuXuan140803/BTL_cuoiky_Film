@@ -42,7 +42,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnphim"
+            android:id="@+id/btnGH"
             android:layout_width="103dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -90,7 +90,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="44dp"
         android:text="Đổi mật khẩu"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +102,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="44dp"
         android:text="Đăng xuất"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,12 +110,13 @@
 
     <TextView
         android:id="@+id/txtEmail"
-        android:layout_width="296dp"
-        android:layout_height="70dp"
+        android:layout_width="394dp"
+        android:layout_height="60dp"
         android:layout_marginTop="44dp"
         android:backgroundTint="#FFFFFF"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"

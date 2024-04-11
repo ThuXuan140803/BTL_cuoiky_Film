@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "832581347821",
+    "project_id": "datvexemphim-71462",
+    "storage_bucket": "datvexemphim-71462.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832581347821:android:ee69f8e6657770e3fa5fe4",
+        "android_client_info": {
+          "package_name": "com.example.baicuoiky"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkZHR4LWomC6-j64UDzXFGuucu6Dc6GyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

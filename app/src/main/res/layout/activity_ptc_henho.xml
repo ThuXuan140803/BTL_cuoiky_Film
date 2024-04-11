@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#201658"
-    tools:context=".activity_kong">
+    tools:context=".activity_P_TC_henho">
     <TextView
         android:id="@+id/txtThongtin"
         android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <ImageView
-        android:id="@+id/iMovieGodzilla"
+        android:id="@+id/iMoviePanda"
         android:layout_width="690dp"
         android:layout_height="217dp"
         android:layout_marginTop="36dp"
@@ -38,37 +38,38 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtThongtin"
-        app:srcCompat="@drawable/kong" />
+        app:srcCompat="@drawable/henho2" />
 
     <TextView
-        android:id="@+id/txtGodzilla"
-        android:layout_width="186dp"
+        android:id="@+id/txtHenho"
+        android:layout_width="238dp"
         android:layout_height="57dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
-        android:text="GODZILLA X KONG"
+        android:text="HẸN HÒ CHỐN CÔNG SỞ"
         android:textColor="#EAEAEA"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iMovieGodzilla" />
+        app:layout_constraintTop_toBottomOf="@+id/iMoviePanda" />
 
     <Button
         android:id="@+id/btnDatve"
-        android:layout_width="152dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="107dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#5755FE"
         android:text="Đặt vé"
         android:textColor="#FBFBFB"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.654"
-        app:layout_constraintStart_toEndOf="@+id/txtGodzilla"
-        app:layout_constraintTop_toBottomOf="@+id/iMovieGodzilla" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtHenho"
+        app:layout_constraintTop_toBottomOf="@+id/iMoviePanda" />
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/linearLayout1"
         android:layout_width="395dp"
         android:layout_height="100dp"
         android:layout_marginTop="12dp"
@@ -80,25 +81,25 @@
 
         <TextView
             android:id="@+id/txtTTphim"
-            android:layout_width="357dp"
-            android:layout_height="90dp"
+            android:layout_width="395dp"
+            android:layout_height="113dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="Kong và Godzilla- 2 sinh vật vĩ đại huyền thoại, 2 kẻ thù truyền kiếp sẽ cùng bắt tay thực thi 1 sứ mệnh chung mang tính sống còn để bảo vệ nhân loại, gắn kết với loài người mãi mãi."
             android:layout_weight="1"
+            android:text="Bộ phim Hẹn Hò Chốn Công Sở xoay quanh câu chuyện yêu đương của nam tổng tài đẹp trai và cô nhân viên xinh đẹp.Với câu chuyện vừa hài hước, vừa lãng mạn lại có chút ngôn tình, đây chắc hẳn sẽ là bộ phim tình cảm Hàn Quốc mà bạn không thể bỏ lỡ. "
             android:textColor="#FBFBFB"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout5"
+        android:id="@+id/LinearLayout2"
         android:layout_width="148dp"
         android:layout_height="258dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
 
         <TextView
             android:id="@+id/txtKhoichieu"
@@ -107,6 +108,7 @@
             android:text="Khởi chiếu"
             android:textColor="#FEFEFE"
             android:textSize="18sp" />
+
         <TextView
             android:id="@+id/txtTheloai"
             android:layout_width="match_parent"
@@ -115,6 +117,7 @@
             android:text="Thể loại"
             android:textColor="@color/white"
             android:textSize="18sp" />
+
         <TextView
             android:id="@+id/txtThoigian"
             android:layout_width="match_parent"
@@ -123,6 +126,7 @@
             android:text="Thời lượng"
             android:textColor="@color/white"
             android:textSize="18sp" />
+
         <TextView
             android:id="@+id/txtNgonngu"
             android:layout_width="match_parent"
@@ -130,7 +134,8 @@
             android:layout_marginTop="20dp"
             android:text="Ngôn ngữ"
             android:textColor="@color/white"
-            android:textSize="18dp"/>
+            android:textSize="18dp" />
+
         <TextView
             android:id="@+id/txtDienvien"
             android:layout_width="match_parent"
@@ -142,38 +147,41 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout6"
+        android:id="@+id/LinearLayout3"
         android:layout_width="209dp"
         android:layout_height="274dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="4dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
 
         <TextView
             android:id="@+id/txtkc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="29/03/2024"
-            android:textSize="18sp"
-            android:textColor="@color/white"/>
+            android:text="28/02/2022"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/txttl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hành động"
+            android:layout_marginTop="20dp"
+            android:text="Tình cảm"
             android:textColor="@color/white"
-            android:textSize="18sp"
-            android:layout_marginTop="20dp" />
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/txttluong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="100 phút"
             android:layout_marginTop="20dp"
-            android:textSize="18sp"
-            android:textColor="@color/white"/>
+            android:text="12 tập"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/txtnn"
             android:layout_width="match_parent"
@@ -181,15 +189,15 @@
             android:layout_marginTop="20dp"
             android:text="Phụ đề Việt"
             android:textColor="@color/white"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/txtdv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Rebecca Hall, Brian Tyree Henry, Dan Stevens, Kaylee Hottle, Alex Ferns, Fala Chen"
+            android:text="Ahn Hyo Seop, Kim Se Jeong, Kim Min Kyu, Seol In Ah,.."
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

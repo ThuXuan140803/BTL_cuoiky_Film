@@ -1,7 +1,7 @@
 package com.example.baicuoiky;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
@@ -31,21 +31,21 @@ public class activity_theloai extends AppCompatActivity {
         linearLayoutKungfu = findViewById(R.id.linearLayoutKungfu);
         linearLayoutGodzilla = findViewById(R.id.linearLayoutGodzilla);
         linearLayoutDenmang = findViewById(R.id.linearLayoutDenmang);
-        btnphim = findViewById(R.id.btnphim);
+        btnphim = findViewById(R.id.btnGH);
         btntaikhoan = findViewById(R.id.btntaikhoan);
 
         iMovieMai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_phimmai.class);
-                startActivity(intentDK);
+                Intent intent = new Intent(activity_theloai.this, activity_TL_tinhcam.class);
+                startActivity(intent);
             }
         });
 
         btnMovieMai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_phimmai.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_tinhcam.class);
                 startActivity(intentDK);
             }
         });
@@ -53,7 +53,7 @@ public class activity_theloai extends AppCompatActivity {
         linearLayoutMai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_phimmai.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_tinhcam.class);
                 startActivity(intentDK);
             }
         });
@@ -61,7 +61,7 @@ public class activity_theloai extends AppCompatActivity {
         iMovieKungfu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_kungfu.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_hoathinh.class);
                 startActivity(intentDK);
             }
         });
@@ -69,7 +69,7 @@ public class activity_theloai extends AppCompatActivity {
         btnMovieKungfu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_kungfu.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_hoathinh.class);
                 startActivity(intentDK);
             }
         });
@@ -77,7 +77,7 @@ public class activity_theloai extends AppCompatActivity {
         linearLayoutKungfu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_kungfu.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_hoathinh.class);
                 startActivity(intentDK);
             }
         });
@@ -85,7 +85,7 @@ public class activity_theloai extends AppCompatActivity {
         iMovieGodzilla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_kong.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_hanhdong.class);
                 startActivity(intentDK);
             }
         });
@@ -93,7 +93,7 @@ public class activity_theloai extends AppCompatActivity {
         btnMovieGodzilla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_kong.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_hanhdong.class);
                 startActivity(intentDK);
             }
         });
@@ -101,7 +101,7 @@ public class activity_theloai extends AppCompatActivity {
         linearLayoutGodzilla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_kong.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_hanhdong.class);
                 startActivity(intentDK);
             }
         });
@@ -109,7 +109,7 @@ public class activity_theloai extends AppCompatActivity {
         iMovieDenmang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_denmang.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_kinhdi.class);
                 startActivity(intentDK);
             }
         });
@@ -117,14 +117,14 @@ public class activity_theloai extends AppCompatActivity {
         btnMovieDenmang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_denmang.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_kinhdi.class);
                 startActivity(intentDK);
             }
         });
         linearLayoutDenmang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(activity_theloai.this, activity_denmang.class);
+                Intent intentDK = new Intent(activity_theloai.this, activity_TL_kinhdi.class);
                 startActivity(intentDK);
             }
         });

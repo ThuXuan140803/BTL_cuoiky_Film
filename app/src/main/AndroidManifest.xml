@@ -13,25 +13,70 @@
         android:theme="@style/Theme.Baicuoiky"
         tools:targetApi="31">
         <activity
+            android:name=".activity_datve"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_HD_kong"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_HH_kungfu"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_KD_denmang"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_TC_mai"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_TC_hacanhnoianh"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_TC_henho"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_TC_titanic"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_HD_linhbantia"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_HD_nhiemvubatkhathi"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_HD_fast"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_HH_minion"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_HH_khachsanhuyenbi"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_HH_conan"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_KD_quycai"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_KD_diembao"
+            android:exported="false" />
+        <activity
+            android:name=".activity_P_KD_trochoichetchoc"
+            android:exported="false" />
+        <activity
+            android:name=".activity_TL_kinhdi"
+            android:exported="false" />
+        <activity
+            android:name=".activity_TL_hanhdong"
+            android:exported="false" />
+        <activity
+            android:name=".activity_TL_hoathinh"
+            android:exported="false" />
+        <activity
+            android:name=".activity_TL_tinhcam"
+            android:exported="false" />
+        <activity
             android:name=".activity_dangky"
-            android:exported="false" />
-        <activity
-            android:name=".activity_denmang"
-            android:exported="false" />
-        <activity
-            android:name=".activity_kong"
-            android:exported="false" />
-        <activity
-            android:name=".activity"
-            android:exported="false" />
-        <activity
-            android:name=".activity_kungfu"
-            android:exported="false" />
-        <activity
-            android:name=".activity_phimmai"
-            android:exported="false" />
-        <activity
-            android:name=".activity_dangxuat"
             android:exported="false" />
         <activity
             android:name=".activity_doimk"
@@ -42,32 +87,15 @@
         <activity
             android:name=".activity_hoadon"
             android:exported="false" />
-        <activity
-            android:name=".activity_thanhtoan"
-            android:exported="false" />
-        <activity
-            android:name=".activity_datve"
-            android:exported="false" />
-        <activity
-            android:name=".activity_chitietphim"
-            android:exported="false" />
-        <activity
-            android:name=".activity_timkiem"
-            android:exported="false" />
+
         <activity
             android:name=".activity_taikhoan"
-            android:exported="false" />
-        <activity
-            android:name=".activity_lichsu"
             android:exported="false" />
         <activity
             android:name=".activity_phim"
             android:exported="false" />
         <activity
             android:name=".activity_theloai"
-            android:exported="false" />
-        <activity
-            android:name=".activity_trangchu"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

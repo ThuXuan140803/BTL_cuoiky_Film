@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#201658"
-    tools:context=".activity_kungfu">
+    tools:context=".activity_P_KD_diembao">
     <TextView
         android:id="@+id/txtThongtin"
         android:layout_width="wrap_content"
@@ -38,17 +38,18 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtThongtin"
-        app:srcCompat="@drawable/panda" />
+        app:srcCompat="@drawable/dbcq" />
 
     <TextView
-        android:id="@+id/txtPanda"
-        android:layout_width="186dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:text="KUNG FU PANDA 4"
+        android:id="@+id/txtDiembao"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="ĐIỀM BÁO CỦA QUỶ"
         android:textColor="#EAEAEA"
-        android:textSize="20sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iMoviePanda" />
 
@@ -64,7 +65,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.654"
-        app:layout_constraintStart_toEndOf="@+id/txtPanda"
+        app:layout_constraintStart_toEndOf="@+id/txtDiembao"
         app:layout_constraintTop_toBottomOf="@+id/iMoviePanda" />
 
     <LinearLayout
@@ -85,7 +86,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:text="Sau khi Po được trở thành thủ lĩnh tinh thần của Thung Lũng Bình Yên, Po cần tìm và huấn luyện một Chiêns binh Rồng mới."
+            android:text="Một cô gái người Mỹ được đưa đến Rome để bắt đầu phụng sự Giáo Hội, cô đã phát hiện ra thế lực hắc ám khiến cô hoài nghi chính minh, hé lộ âm mưu tái sinh linh hồn ác quỷ."
             android:textColor="#FBFBFB"
             android:textSize="18sp" />
     </LinearLayout>
@@ -155,14 +156,14 @@
             android:id="@+id/txtkc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="08/03/2024"
+            android:text="05/04/2024"
             android:textSize="18sp"
             android:textColor="@color/white"/>
         <TextView
             android:id="@+id/txttl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hoạt hình"
+            android:text="Kinh dị"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:layout_marginTop="20dp" />
@@ -170,7 +171,7 @@
             android:id="@+id/txttluong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="84 phút"
+            android:text="112 phút"
             android:layout_marginTop="20dp"
             android:textSize="18sp"
             android:textColor="@color/white"/>
@@ -187,7 +188,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Jack Black, Dustin Hoffman,James Hong, Awkwafina"
+            android:text="Nell Tiger Free, Tawfeek Barhom, Sonia Braga, Ralph Ineson, and Bill Nighy"
             android:textColor="@color/white"
             android:textSize="16sp" />
     </LinearLayout>

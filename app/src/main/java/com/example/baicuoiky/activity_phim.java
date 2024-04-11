@@ -15,7 +15,7 @@ public class activity_phim extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phim);
-        btnphim = findViewById(R.id.btnphim);
+        btnphim = findViewById(R.id.btnGH);
         btntheloai = findViewById(R.id.btntheloai);
         btntaikhoan = findViewById(R.id.btntaikhoan);
         iMai = findViewById(R.id.iMai);
@@ -43,7 +43,7 @@ public class activity_phim extends AppCompatActivity {
         iMai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity_phim.this, activity_phimmai.class);
+                Intent intent = new Intent(activity_phim.this, activity_P_TC_mai.class);
                 startActivity(intent);
 
             }
@@ -52,7 +52,7 @@ public class activity_phim extends AppCompatActivity {
         iKong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity_phim.this, activity_kong.class);
+                Intent intent = new Intent(activity_phim.this, activity_P_HD_kong.class);
                 startActivity(intent);
 
             }
@@ -61,7 +61,7 @@ public class activity_phim extends AppCompatActivity {
         iKungfu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity_phim.this, activity_kungfu.class);
+                Intent intent = new Intent(activity_phim.this, activity_P_HH_kungfu.class);
                 startActivity(intent);
 
             }
@@ -70,7 +70,7 @@ public class activity_phim extends AppCompatActivity {
         iDenmang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity_phim.this, activity_denmang.class);
+                Intent intent = new Intent(activity_phim.this, activity_P_KD_denmang.class);
                 startActivity(intent);
 
             }

@@ -7,20 +7,6 @@
     android:background="#201658"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txttheloai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Thể Loại"
-        android:textColor="#E2E2E2"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRCP" />
-
     <LinearLayout
         android:layout_width="410dp"
         android:layout_height="89dp"
@@ -31,18 +17,18 @@
 
         <Button
             android:id="@+id/btntheloai"
-            android:layout_width="wrap_content"
+            android:layout_width="118dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#673AB7"
-            android:text="Thể loại"
+            android:text="Trang chủ"
             android:textAlignment="center"
             android:textColor="#CDDC39"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnphim"
+            android:id="@+id/btnGH"
             android:layout_width="103dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -53,7 +39,7 @@
 
         <Button
             android:id="@+id/btntaikhoan"
-            android:layout_width="103dp"
+            android:layout_width="97dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#673AB7"
@@ -91,10 +77,10 @@
         android:id="@+id/linearLayoutMai"
         android:layout_width="393dp"
         android:layout_height="93dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="80dp"
         android:background="@color/white"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/txttheloai"
+        app:layout_constraintTop_toBottomOf="@+id/txtRCP"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp">
 

@@ -262,13 +262,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#673AB7"
-            android:text="Thể loại"
+            android:text="Trang chủ"
             android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnphim"
+            android:id="@+id/btnGH"
             android:layout_width="103dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

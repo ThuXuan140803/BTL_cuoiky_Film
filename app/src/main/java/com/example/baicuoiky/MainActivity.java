@@ -1,60 +1,94 @@
 package com.example.baicuoiky;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    EditText edtemail,edtmatkhau;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-    Button btndangnhap,btndangky;
-    private String username;
-    private String pwd;
-    @SuppressLint("MissingInflatedId")
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
+public class MainActivity extends AppCompatActivity {
+    EditText edtemail, edtmatkhau;
+    private FirebaseAuth mAuth;
+    Button btndangnhap, btndangky;
+    TextView txtquenmatkhau;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mAuth = FirebaseAuth.getInstance();
         edtemail = findViewById(R.id.edtemail);
         edtmatkhau = findViewById(R.id.edtmatkhau);
         btndangnhap = findViewById(R.id.btndangnhap);
         btndangky = findViewById(R.id.btndangky);
+        txtquenmatkhau = findViewById(R.id.txtquenmatkhau);
+
         btndangnhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = edtemail.getText().toString();
-                String mk = edtmatkhau.getText().toString();
-                username = "xuan1408@gmail.com";
-                pwd = "10011408";
-                if (email.equals("") && mk.equals(""))
-                    Toast.makeText(MainActivity.this, "Vui lòng nhập thông tin", Toast.LENGTH_LONG).show();
-                else if (email.equals(username) && mk.equals(pwd)) {
-                    Toast.makeText(MainActivity.this, "Đăng nhập thành công", Toast.LENGTH_LONG).show();
-
-                    Intent intentDS = new Intent(MainActivity.this, activity_theloai.class);
-                    startActivity(intentDS);
-
-                }
-                else {
-                    Toast.makeText(MainActivity.this, "Tên đăng nhập không tồn tại hoặc sai mật khẩu", Toast.LENGTH_LONG).show();
-                }
-
+                login();
             }
         });
+
         btndangky.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDK = new Intent(MainActivity.this, activity_dangky.class);
-                startActivity(intentDK);
+                Intent i = new Intent(MainActivity.this, activity_dangky.class);
+                startActivity(i);
+            }
+        });
 
+        txtquenmatkhau.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, activity_quenmk.class);
+                startActivity(i);
             }
         });
 
     }
+
+    private void login() {
+        String email, pass;
+        email = edtemail.getText().toString();
+        pass = edtmatkhau.getText().toString();
+        if (TextUtils.isEmpty(email)) {
+            Toast.makeText(this, "Vui lòng nhập email!!!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (TextUtils.isEmpty(pass)) {
+            Toast.makeText(this, "Vui lòng nhập password!!!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    Toast.makeText(getApplicationContext(), "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, activity_theloai.class);
+                    startActivity(intent);
+                    finish(); // Để kết thúc activity hiện tại sau khi chuyển đến activity_dangky
+                } else {
+                    Toast.makeText(getApplicationContext(), "Đăng nhập không thành công", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+    }
+
+
 }
